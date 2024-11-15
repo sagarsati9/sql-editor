@@ -1,0 +1,192 @@
+.codeEditor {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  height: 35dvh;
+  border: 1px solid var(--editorBorderColor);
+  background-color: var(--editorBgColor);
+  color: var(--editorTextColor);
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto 16px auto;
+  flex-wrap: wrap;
+}
+
+.dropdownContainer {
+  display: flex;
+}
+
+.dropdownContainer > div :nth-child(n+1) {
+  margin: 0 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.runButton:disabled,
+.clearButton:disabled {
+  background-color: var(--disableButtonBgColor);
+  color: var(--constantWhite);
+}
+
+.runButton,
+.clearButton,
+.cancelButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.runButton {
+  background-color: var(--buttonColor);
+  color: var(--constantWhite);
+}
+
+.clearButton,
+.cancelButton {
+  background-color: var(--cancelButtonColor);
+  color: var(--constantWhite);
+}
+
+.clearButton {
+  margin-left: 8px;
+}
+
+.lineNumbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  min-width: 40px;
+  background-color: var(--lineNumberBgColor);
+  color: var(--editorTextColor);
+  user-select: none;
+  line-height: 20px;
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+}
+
+.lineNumber {
+  opacity: 0.6;
+}
+
+.codeTextArea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-family: "Courier New", monospace;
+  resize: none;
+  background-color: var(--editorBgColor);
+  color: var(--editorTextColor);
+  outline: none;
+  caret-color: var(--editorTextColor);
+  overflow: auto;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.codeTextArea::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.codeTextArea::-webkit-scrollbar-thumb {
+  background-color: var(--scrollBgColor);
+  border-radius: 5px;
+}
+
+/* theme */
+
+.darkTheme {
+    --editorTextColor: #f0f0f0;
+    --editorBorderColor: #ccc;
+    --lineNumberBgColor: #333;
+    --editorBgColor: #1e1e1e;
+    --scrollBgColor: #555;
+}
+
+
+.lightTheme {
+    --editorTextColor: #333;
+    --editorBorderColor: #ccc;
+    --lineNumberBgColor: #f0f0f0;
+    --editorBgColor: #fff;
+    --scrollBgColor: #ccc;
+}
+
+.nightOwlTheme {
+    --editorTextColor: #f0f0f0;
+    --editorBorderColor: #555;
+    --lineNumberBgColor: #2d2b55;
+    --editorBgColor: #011627;
+    --scrollBgColor: #555;
+}
+
+.solarizedLightTheme {
+    --editorTextColor: #657b83;
+    --editorBorderColor: #93a1a1;
+    --lineNumberBgColor: #f1ebda;
+    --editorBgColor: #fdf6e3;
+    --scrollBgColor: #eee8d5;
+  
+    --activeLineBgColor: #f0e68c; 
+    --activeLineNumColor: #657b83;
+}
+  
+.draculaTheme {
+    --editorTextColor: #f8f8f2;
+    --editorBorderColor: #6272a4;
+    --lineNumberBgColor: #44475a;
+    --editorBgColor: #282a36;
+    --scrollBgColor: #44475a;
+}
+
+.oceanicNextTheme {
+    --editorTextColor: #c3cee3;
+    --editorBorderColor: #384051;
+    --lineNumberBgColor: #373d49;
+    --editorBgColor: #2b303b;
+    --scrollBgColor: #4f5b66;
+}
+
+.gitHubTheme {
+    --editorTextColor: #333333;
+    --editorBorderColor: #e1e4e8;
+    --lineNumberBgColor: #f6f8fa;
+    --editorBgColor: #ffffff;
+    --scrollBgColor: #e1e4e8;
+}
+
+
+@media screen and (max-width: 920px) {
+  .dropdownContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .toolbar {
+    flex-direction: column;
+  }
+
+  .dropdownContainer {
+    flex-direction: column;
+  }
+}

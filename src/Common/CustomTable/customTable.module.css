@@ -1,0 +1,68 @@
+.resultContainer {
+  width: 500px;
+  width: 100%;
+  min-height: 380px;
+  height: 42dvh;
+  overflow: hidden;
+}
+
+.tableHeadContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.head {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.exportButton {
+  background-color: var(--buttonColor);
+  color: var(--constantWhite);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.exportButton {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loader {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  top: 30%;
+}
+
+.queryMessage {
+  font-size: 20px;
+}
+
+.result {
+  height: calc(100% - 60px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.result::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.result::-webkit-scrollbar-track {
+  background: var(--thColor);
+}
+
+.result::-webkit-scrollbar-thumb {
+  background: var(--tableScrollThumbColor);
+  border-radius: 5px;
+  cursor: pointer;
+}
