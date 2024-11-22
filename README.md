@@ -1,13 +1,9 @@
 # The Smart SQL Editor
-![image](https://github.com/prabhashrai02/dummy-sql-editor/assets/73634195/ac55185e-8ad2-4375-9ca7-5d977add2774)
+
 
 ## Overview
 
 This project is a feature-rich data visualization and SQL editor tool that allows users to run queries, view results in a customizable table format, and perform various actions to enhance the user experience. The application supports two themes (dark and light) and stores the user's query history, theme preference, and code editor theme in local storage for a seamless and personalized experience.
-
-## Live Project
-
-The live version of the project is accessible here: [Live Demo](https://prabhashrai02.github.io/dummy-sql-editor/)
 
 ## Technologies Used
 
@@ -45,11 +41,6 @@ The live version of the project is accessible here: [Live Demo](https://prabhash
 
 - Query Prefill: Clicking on a sample query or history item prefills the query in the code editor, saving time on manual input.
 
-## Performance Report
-
-![image](https://github.com/prabhashrai02/dummy-sql-editor/assets/73634195/915dcfc2-6ddb-4797-8bcd-fc5ba958fbfa)
-
-![image](https://github.com/prabhashrai02/dummy-sql-editor/assets/73634195/0db19335-6217-47a9-a1af-c87b536f9269)
 
 
 
